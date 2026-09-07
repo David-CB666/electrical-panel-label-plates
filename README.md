@@ -1,5 +1,18 @@
 # electrical-panel-label-plates · 電箱標籤牌自動化
 
+---
+<div align="center">
+
+**Full automation pipeline for electrical panel label plates**
+
+CAD SLD → parsed circuit table → Word label plates → CAD vector fabrication drawing
+
+[快速開始](#工作流) · [文件結構](#文件結構) · [技術棧](#技術棧)
+
+</div>
+
+---
+
 > 從 CAD 單線圖（DWG/DXF）→ 解析迴路表（JSON）→ Word 標籤牌（docx）→ CAD 向量加工圖（DXF/SVG，1:1 尺寸註解）。全自動管線。
 
 ## 解決什麼問題
@@ -86,7 +99,7 @@ CAD 向量加工圖 (DXF / SVG，帶尺寸註解)
 ```
 electrical-panel-label-plates/
 ├── README.md       # 本文件
-└── SKILL.md        # 完整技能文檔（規格 + 工作流 + 坑位大全）
+└── DOCUMENTATION.md        # 完整技能文檔（規格 + 工作流 + 坑位大全）
 ```
 
 ## 技術棧
@@ -100,8 +113,9 @@ electrical-panel-label-plates/
 1. **只出 Word（.docx），不出 PNG 圖。** 除非用戶明確要求圖片（如俾廣告商嘅規格標註圖特例）。
 2. **用戶手改過嘅 docx 只准讀取理解，禁止覆寫。** 重新生成時輸出必須去 temp 或加 `_v2` 後綴。
 
-詳細用法請參閱 [SKILL.md](SKILL.md)。
+詳細用法請參閱 [DOCUMENTATION.md](DOCUMENTATION.md)。
 
 ---
+## License
 
-*來自 Engineering AI Skills 集合*
+MIT License — feel free to use, modify, and share.
