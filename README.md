@@ -11,6 +11,8 @@ CAD SLD → parsed circuit table → Word label plates → CAD vector fabricatio
 
 </div>
 
+![電箱標籤牌全自動管線](assets/pipeline-overview.jpg)
+
 ---
 
 > 從 CAD 單線圖（DWG/DXF）→ 解析迴路表（JSON）→ Word 標籤牌（docx）→ CAD 向量加工圖（DXF/SVG，1:1 尺寸註解）。全自動管線。
