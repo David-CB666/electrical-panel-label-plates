@@ -1,4 +1,4 @@
----
+﻿---
 name: electrical-panel-label-plates
 description: 机电工程「电箱标签牌」全自动制作技能。当用户要从 CAD 单线图（SLD / DWG / DXF）读出配电箱回路表并生成黑底白字 Word 标签牌（贴在每个断路器 MCB/RCD 下方的用途+回路编号条），或要由 Word 标签牌转成带尺寸标注的 CAD 向量加工图（DXF / SVG）给广告商/加工场 1:1 落料时使用。触发词：电箱标签、配电箱标签牌、回路标签、面板标签、MCB 标签、RCD 标签、单线图回路表、电气标签牌、标签牌 CAD 加工图、label plates、panel schedule to docx / to dxf。覆盖两种 SLD 网格格式（A 纵向量表 / B 横向网格），含 RCD 极数人工确认门槛（17:25 斜线数原则）、fixed-layout 栏宽锁定、verify gate。只出 Word 不出 PNG；可加 CAD 向量加工图。
 ---
@@ -34,7 +34,7 @@ CAD 单线图 (DWG) → DXF → 解析回路表 (JSON) → 人工确认 RCD 极�
 - 用户要由 Word 标签牌转 CAD 加工图（带尺寸标注的 DXF / SVG，给广告商/加工场落料）。
 - 用户问「这个 RCD 是几 P」「栏宽对不对」「标签牌格式」「标签牌 CAD 图」等。
 
-**不适用**：若用户只要「电箱大样图 / arrangement drawing」→ 改用 `cad-sld-to-arrangement` 技能。若用户要「材料报批」→ 改用 `macau-material-approval`。
+**不适用**：若用户只要「电箱大样图 / arrangement drawing」→ 改用 `cad-sld-to-arrangement` 技能。若用户要「材料报批」→ 改用 `material-approval-pipeline`。
 
 ---
 
